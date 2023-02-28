@@ -9,11 +9,11 @@
 }
 
 :root{
-    --bg-color: #2a2a2a;
+    --bg-color: #1b1b1b;
     --second-bg-color: #202020;
     --text-color: #fff;
     --second-color: #ccc;
-    --main-color: #ff4d05;
+    --main-color: #8300E9;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -150,8 +150,10 @@ section{
 }
 .btn-dois{
     display: inline-block;
-    color: var(--text-color);
     padding: 12px 28px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
     margin-left: 35px;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -160,6 +162,6 @@ section{
 }
 .btn-dois:hover{
     transform: scale(0.9);
-    background-color: var(--text-color);
-    border: 2px solid var(--text-color);
+    background-color: #fff;
+    border-color: #fff;
 }
