@@ -166,3 +166,15 @@ section{
     border-color: #fff;
 }
 
+.btn-tres{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+    color: #fff;
+}
