@@ -593,7 +593,7 @@ footer{
 
 @media (max-width: 880px){
     #menu-icon{
-        display: block;
+        display: flex;
     }
     .navlist{
         position: absolute;
@@ -654,5 +654,9 @@ footer{
     }
     .navlist.open{
         top: 100%;
+    }
+    .main-text h2{
+        font-size: 2rem;
+        line-height: 1;
     }
 }
