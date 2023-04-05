@@ -405,6 +405,35 @@ header.ativo{
     border-radius: 50%;
 }
 
+.layer .p-icons i{        /*  .p-icons - um icone  */
+    background: none;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 0%;
+    
+}
+
+.layer .p-icons2 i{         /*  .p-icons - dois icones  */
+    background: none;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 0%;
+    
+}
+
+.p-icons2{             /*  Centralizar itens  */
+    display: flex;          
+    margin-left: -15px;  
+}
+
+.p-icons2 img{
+    margin-top: 17px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+
 .row:hover img{
     transform: scale(1.1);
 }
