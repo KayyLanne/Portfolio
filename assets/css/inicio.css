@@ -78,6 +78,19 @@ section{
     padding: 160px 15% 120px;
 }
 
+.home2{
+    padding: 160px 15% 120px;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-image: url("../img/bg-home.jpg");
+    background-size:cover;
+    background-position: center;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
 .home{
     position: relative;
     height: 100vh;
