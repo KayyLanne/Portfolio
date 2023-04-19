@@ -403,7 +403,7 @@ header.ativo{
     line-height: 1.8;
 }
 
-#open-modal {
+#open-modal, #open-modal2, #open-modal3{
     color: var(--main-color);
     margin-top: 20px;
     font-size: 20px;
@@ -457,13 +457,14 @@ header.ativo{
 }
 
 
-#fade, #modal{
+#fade, #fade2, #fade3
+#modal, #modal2, #modal3{
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
 }
 
-#fade{
+#fade, #fade2, #fade3{
     position: fixed;
     top: 0;
     left: 0;
@@ -473,7 +474,7 @@ header.ativo{
     z-index: 5;
 }
 
-#modal {
+#modal, #modal2, #modal3{
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -509,14 +510,19 @@ button {
     -webkit-font-smoothing: antialiased;
 }
 
-.modal-header i{
+#modal .modal-header i,
+#modal2 .modal-header i,
+#modal3 .modal-header i
+{
     padding: .6rem 1.2rem;
     cursor: pointer;
     font-size: 2rem;
     color: #8257E6;
 }
 
-.modal-header .h2-modal{
+#modal .modal-header .h2-modal,
+#modal2 .modal-header .h2-modal,
+#modal3 .modal-header .h2-modal{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 500;
@@ -531,7 +537,9 @@ button {
     
 }
 
-#modal .modal-body .modal-p{
+#modal .modal-body .modal-p,
+#modal2 .modal-body .modal-p,
+#modal3 .modal-body .modal-p{
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -549,12 +557,16 @@ button {
     text-align: left
 }
 
-#modal .links{
+#modal .links,
+#modal2 .links,
+#modal3 .links{
     display: flex;
     gap: 1rem;
 }
 
-#modal .links a {
+#modal .links a,
+#modal2 .links a,
+#modal3 .links a{
     display: inline-block;
     width: fit-content;
     color: #F9F9F9;
@@ -566,13 +578,17 @@ button {
     border-radius: 0.5rem
 }
 
-#modal .modal-img{
+#modal .modal-img,
+#modal2 .modal-img,
+#modal3 .modal-img{
     max-width: 50%;
     display: flex;
     gap: 1rem;
 }
 
-#modal .modal-img img{
+#modal .modal-img img,
+#modal2 .modal-img img,
+#modal3 .modal-img img{
     justify-content: center;
     text-align: center;
     transform: none;
@@ -580,7 +596,11 @@ button {
 }
 
 #modal.hide,
-#fade.hide{
+#fade.hide,
+#modal2.hide,
+#fade2.hide,
+#modal3.hide,
+#fade3.hide{
     opacity: 0;
     pointer-events: none;
 }
