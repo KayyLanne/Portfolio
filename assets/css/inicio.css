@@ -350,7 +350,6 @@ header.ativo{
 
 .box:hover{
     transform: translateY(-8px);
-   
 }
 
 .portfolio-content{
@@ -365,7 +364,6 @@ header.ativo{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    cursor: pointer;
 }
 
 .row img{
@@ -405,7 +403,7 @@ header.ativo{
     line-height: 1.8;
 }
 
-.layer i{
+#open-modal {
     color: var(--main-color);
     margin-top: 20px;
     font-size: 20px;
@@ -416,6 +414,9 @@ header.ativo{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    border:none!important;
+    background-color: white!important;
+    cursor: pointer;
 }
 
 .layer .p-icons i{        /*  .p-icons - um icone  */
@@ -440,7 +441,7 @@ header.ativo{
 }
 
 .p-icons2 img{
-    margin-top: 17px;
+    margin-top: 2px;
     display: flex;
     width: 25px;
     height: 25px;
@@ -453,6 +454,135 @@ header.ativo{
 
 .row:hover .layer{
     height: 100%;
+}
+
+
+#fade, #modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2.5rem;
+    gap: 2.5rem;
+    background-color: #13131F;
+    border-radius: 1rem;
+    animation: fade 1s;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%)
+}
+
+button {
+    background: none;
+    background-color: none;
+    border: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px;
+    margin-bottom: 1rem;
+}
+
+.ri-close-line{
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.modal-header i{
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #8257E6;
+}
+
+.modal-header .h2-modal{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #8257E6;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -35px;
+    
+}
+
+#modal .modal-body .modal-p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #828282;
+    line-height: 140%;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.modal-body span{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #8257E6;
+    text-align: left
+}
+
+#modal .links{
+    display: flex;
+    gap: 1rem;
+}
+
+#modal .links a {
+    display: inline-block;
+    width: fit-content;
+    color: #F9F9F9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 10px 6px;
+    background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, rgba(121,48,190,0.648) 100%);
+    border-radius: 0.5rem
+}
+
+#modal .modal-img{
+    max-width: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+#modal .modal-img img{
+    justify-content: center;
+    text-align: center;
+    transform: none;
+    width: 100%;
+}
+
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .contact{
@@ -631,6 +761,14 @@ footer{
     }
     .contact{
         grid-template-columns: 1fr;
+    }
+
+    #modal{
+        width:90%;
+        top: 50%;
+    }
+    #modal .h2-modal{
+        font-size: 1.6rem;
     }
 }
 
