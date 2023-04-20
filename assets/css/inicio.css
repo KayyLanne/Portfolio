@@ -403,7 +403,8 @@ header.ativo{
     line-height: 1.8;
 }
 
-#open-modal, #open-modal2, #open-modal3{
+#open-modal, #open-modal2, #open-modal3,
+#open-modal-prog1, #open-modal-prog2, #open-modal-prog3{
     color: var(--main-color);
     margin-top: 20px;
     font-size: 20px;
