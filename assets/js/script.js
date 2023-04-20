@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 function activateScroll(){
-    header.classList.toggle("ativo", scrollY > 100);
+    header.classList.toggle("ativo", scrollY > 50);
 }
 
 window.addEventListener("scroll", activateScroll);
