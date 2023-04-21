@@ -615,7 +615,9 @@ button {
     text-align: center;
     transform: none;
     width: 100%;
+
 }
+
 
 #modal.hide,
 #fade.hide,
