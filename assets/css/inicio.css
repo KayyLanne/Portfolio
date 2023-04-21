@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -18,6 +18,11 @@
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
+}
+
+::selection{
+    color: #fff;
+    background: #8257E6;
 }
 
 body {
@@ -545,7 +550,20 @@ button {
 #modal2 .modal-body .modal-p,
 #modal3 .modal-body .modal-p{
     font-family: 'DM Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #828282;
+    line-height: 120%;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+
+#modal .modal-body .modal-p-f,
+#modal2 .modal-body .modal-p-f,
+#modal3 .modal-body .modal-p-f{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #828282;
     line-height: 140%;
@@ -576,8 +594,8 @@ button {
     color: #F9F9F9;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 10px;
-    padding: 10px 6px;
+    font-size: 15px;
+    padding: 15px 6px;
     background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, rgba(121,48,190,0.648) 100%);
     border-radius: 0.5rem
 }
@@ -992,6 +1010,7 @@ footer{
     #modal2 .modal-header .h2-modal,
     #modal3 .modal-header .h2-modal{
         font-size: 1.3rem;
+        text-align: left;
     }
     #modal .modal-body .modal-p,
     #modal2 .modal-body .modal-p,
@@ -1002,7 +1021,31 @@ footer{
         font-size: 0.7rem;
     }
 
+    #modal .links a,
+    #modal2 .links a,
+    #modal3 .links a{
+    font-size: 10px;
+    padding: 10px 6px;
+    background-image: linear-gradient(90deg, rgba(130,87,230,0.8) .2%, rgba(121,48,190,0.648) 100%);
+    border-radius: 0.5rem
 }
+
+    #modal .modal-body .modal-p-f,
+    #modal2 .modal-body .modal-p-f,
+    #modal3 .modal-body .modal-p-f{
+    font-size: 0.8rem;
+}
+
+}
+
+@media (max-width: 420px){
+    #modal .modal-header .h2-modal,
+    #modal2 .modal-header .h2-modal,
+    #modal3 .modal-header .h2-modal{
+        font-size: 1rem;
+        text-align: left;
+}
+
 
 #resume {
     padding-top: 12rem;
